@@ -1,0 +1,13 @@
+node_modules/
+sftp-config.json
+logs/
+.idea
+**/*.iml
+.DS_Store
+target
+.vagrant
+*.sublime-project
+*.sublime-workspace
+.sublime-gulp.cache
+.svn
+.vscode/

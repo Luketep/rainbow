@@ -1,0 +1,59 @@
+{
+  "name": "rainbow",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Luketep/rainbow/issues",
+    "email": "info@checkmy.cash"
+  },
+  "contributors": [
+    {
+      "name": "Luketep",
+      "email": "info@checkmy.cash",
+      "url": "http://checkmy.cash"
+    }
+  ],
+  "engines": {
+    "node": "8.6.0",
+    "npm": "5.3.0"
+  },
+  "homepage": "http://checkmy.cash",
+  "repository": "https://github.com/Luketep/rainbow",
+  "version": "1.0.0",
+  "description": "http://checkmy.cash",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "client-build": "rm -rf target; gulp",
+    "client-watch": "rm -rf target; gulp watch"
+  },
+  "author": "Luketep <info@checkmy.cash>",
+  "license": "WTFPL",
+  "devDependencies": {
+    "babel": "6.23.0",
+    "babel-cli": "6.26.0",
+    "babel-preset-latest": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "babelify": "7.3.0",
+    "browserify": "14.4.0",
+    "gulp": "3.9.1",
+    "gulp-babel": "7.0.0",
+    "gulp-clean": "0.3.2",
+    "gulp-concat": "2.6.1",
+    "gulp-sourcemaps": "2.6.1",
+    "gulp-stylus": "2.6.0",
+    "gulp-uglify": "3.0.0",
+    "gulp-util": "3.0.8",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.1.0",
+    "vinyl-sourcemap": "1.1.0"
+  },
+  "dependencies": {
+    "express": "4.16.1",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-redux": "5.0.6",
+    "react-router-dom": "4.2.2",
+    "redux": "3.7.2"
+  }
+}

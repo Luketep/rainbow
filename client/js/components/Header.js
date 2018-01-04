@@ -19,7 +19,7 @@ class Header extends React.Component {
         const isAutoUpdateEnabled = this.props.autoUpdate;
         const hasValidConfig = this.props.validConfig;
         const updateButtonDisabled = hasValidConfig ? false : true;
-        const example = '[ { "token": "BTC", "amount": 1, "exchange": "CRYPTOCOMPARE" }, { "token": "ETH", "amount": 1, "exchange": "CRYPTOCOMPARE" } ]';
+        const example = '[ { "token": "BTC", "amount": 1, "exchange": "COINCAPMARKET" }, { "token": "ETH", "amount": 1, "exchange": "CRYPTOCOMPARE" } ]';
         const validationError = this.props.validationError.split('\n');
 
         let updateButtonClassNames = 'button is-black is-large';
@@ -44,10 +44,12 @@ class Header extends React.Component {
                     </div>
                 </div>
                 <div className="container">
-                    <p className="help is-small">
-                        Supported exchanges: <a className="has-text-weight-bold" href="https://www.cryptocompare.com/">CryptoCompare</a>
-                    </p>
-                    <p className="help is-small">{example}</p>
+                    <div className="help is-small">
+                        <div>Supported exchanges:</div>
+                        <div><a className="has-text-weight-bold" target="_blank" href="https://www.cryptocompare.com/">CryptoCompare</a></div>
+                        <div><a className="has-text-weight-bold" target="_blank" href="https://coinmarketcap.com/">CoinMarketCap</a></div>
+                    </div>
+                    <p className="help is-small">Example Data: {example}</p>
                     <div className="control">
                         <textarea
                             className="textarea is-small"

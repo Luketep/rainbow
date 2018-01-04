@@ -18,7 +18,7 @@
   },
   "homepage": "http://checkmy.cash",
   "repository": "https://github.com/Luketep/rainbow",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "http://checkmy.cash",
   "main": "index.js",
   "scripts": {

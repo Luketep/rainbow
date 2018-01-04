@@ -2,9 +2,12 @@ import ACTIONS from './actions';
 
 import cryptoCompareService from './exchanges/cryptoCompareService';
 import cryptoCompareParser from './exchanges/cryptoCompareParser';
+import coinMarketCapService from './exchanges/coinMarketCapService';
+import coinMarketCapParser from './exchanges/coinMarketCapParser';
 
 const EXCHANGES = {
-    CRYPTOCOMPARE: { PARSER: cryptoCompareParser, SERVICE: cryptoCompareService }
+    CRYPTOCOMPARE: { PARSER: cryptoCompareParser, SERVICE: cryptoCompareService },
+    COINMARKETCAP: { PARSER: coinMarketCapParser, SERVICE: coinMarketCapService }
 };
 
 export default {
